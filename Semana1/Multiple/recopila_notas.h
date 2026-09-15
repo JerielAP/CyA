@@ -22,6 +22,8 @@ class RecopilaNotas {
   void Agregar_Nota(std::string alumno, double nota);
   void Imprimir_Calificaciones();
 
+  void Calificacion_Alu(std::string alumno);
+
 };
 
 #endif

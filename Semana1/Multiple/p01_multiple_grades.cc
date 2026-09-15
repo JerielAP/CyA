@@ -21,7 +21,9 @@ if (std::string(argv[1]) == "--help") {
               << "Uso: ./p01_multiple_grades grades.txt\n"
               << "Formato de documento esperado:\n"
               << "alu01010101 4.5\n"
-              << "alu02020202 9.5\n";
+              << "alu02020202 9.5\n"
+              << "  Función de busqueda de nota máxima:\n"
+              << "./p01_multiple_grades grades.txt --max alu...";
     return 0; 
   }
 
@@ -41,6 +43,17 @@ if (std::string(argv[1]) == "--help") {
 
     mis_notas.Agregar_Nota(alumno_leido, nota_leida);
   }
+
+  if (std::string(argv[2]) == "--max"){
+    if(argc == 3){
+      std::cout << "Uso correcto: ./p01_multiple_grades grades.txt --max alu...\n";
+      return 1;
+    } else if (argc == 4){
+        mis_notas.Calificacion_Alu(std::string(argv[3]));
+        return 0;
+    }
+  }
+
 
   mis_notas.Imprimir_Calificaciones();
 

@@ -21,3 +21,23 @@ void RecopilaNotas::Imprimir_Calificaciones() {
   }
 }
 
+void RecopilaNotas::Calificacion_Alu(std::string alumno) {
+  bool encontrado{false};
+  for (const auto& elemento : calificaciones) {
+    if(elemento.first == alumno){
+      double max = elemento.second.at(0);
+      for(double nota : elemento.second){
+        if(max < nota){
+          max = nota;
+        }
+      }
+    std::cout << "La calificación máxima es " << max << std::endl;
+    encontrado = true;
+    }
+  }
+  if(!encontrado){
+    std::cout << "No se ha encontrado el estudiante " << alumno << std::endl;
+  }
+}
+
+
