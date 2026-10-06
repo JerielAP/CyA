@@ -1,8 +1,8 @@
 /**
- * @file ***
+ * @file html_analyzer.h
  * @author Jeriel Afonso Palenzuela (alu0101822761@ull.edu.es)
  * @date 5/10/2026
- * @brief ****
+ * @brief Clase destinada al analisis de archivos html. Filtra determinadas estructuras
  *        
  *        
  */

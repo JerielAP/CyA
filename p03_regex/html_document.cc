@@ -1,8 +1,8 @@
 /**
- * @file ***
+ * @file html_document.cc
  * @author Jeriel Afonso Palenzuela (alu0101822761@ull.edu.es)
  * @date 5/10/2026
- * @brief ****
+ * @brief Implementacion de la clase
  *        
  *        
  */

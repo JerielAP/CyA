@@ -1,8 +1,8 @@
 /**
- * @file ***
+ * @file p04_html_analyzer.cc
  * @author Jeriel Afonso Palenzuela (alu0101822761@ull.edu.es)
  * @date 5/10/2026
- * @brief ****
+ * @brief Main destinado al analisis de fucheros html y su impresion en un archivo
  *        
  *        
  */
@@ -40,7 +40,8 @@ int main(int argc, char* argv[]){
   HtmlAnalyzer analizador;
   HtmlDocument documento = analizador.Analyze(argv[1]);
   GenerateReport(fichero_salida, documento);
-  GenerateReport(std::cout, documento);
+  //GerateReport(std::cout, documento);
+  //Así se imprimiria por pantalla
 
   return 0;
 }
